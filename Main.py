@@ -145,15 +145,15 @@ with tab1:
         age = st.number_input("Age", min_value=18, max_value=100, value=35)
         if employment_type == "Employee with pension fund":
             if age < 25:
-                default_pillar2 = salary * 0.07
+                default_pillar2 = salary * 0.07 * 0.5
             elif age < 35:
-                default_pillar2 = salary * 0.10
+                default_pillar2 = salary * 0.10 * 0.5
             elif age < 45:
-                default_pillar2 = salary * 0.15
+                default_pillar2 = salary * 0.15 * 0.5
             elif age < 55:
-                default_pillar2 = salary * 0.18
+                default_pillar2 = salary * 0.18 * 0.5
             elif age < 65:
-                default_pillar2 = salary * 0.20
+                default_pillar2 = salary * 0.20 * 0.5
             else:
                 default_pillar2 = 0.0
         else:
