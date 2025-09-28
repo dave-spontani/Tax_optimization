@@ -416,8 +416,7 @@ with tab2:
                         viz_plot = viz.set_index("label")[["Tax saved", "Net cost"]]
                         st.bar_chart(viz_plot)
 
-                        st.info("Notes: - Pillar 3a allocations are capped by the remaining legal allowance.
-- This optimizer treats all allocations as immediately deductible in the current tax year. Validate with a tax advisor before acting.")
+                        st.info("Notes: - Pillar 3a allocations are capped by the remaining legal allowance. - This optimizer treats all allocations as immediately deductible in the current tax year. Validate with a tax advisor before acting.")
 
 st.markdown("---")
 st.caption("This app is an estimator for exploration and optimization. Tax rules and caps change — always verify with official sources or a qualified tax professional before making tax decisions.")
