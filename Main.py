@@ -111,7 +111,7 @@ with tab1:
     default_health = max_health_adult if marital_status == "Single" else 2 * max_health_adult
     if has_children:
         default_health += max_health_child
-    health_insurance = st.number_input(min_value=0.0, max_value=default_health)
+    health_insurance = st.number_input(max_value=default_health)
     st.caption("Note: Only mandatory basic insurance premiums are deductible. Supplementary/private insurance is not deductible.")
 
     default_child_deduction = 9400 if has_children else 0
