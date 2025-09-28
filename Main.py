@@ -115,7 +115,7 @@ with tab1:
     st.caption("Note: Only mandatory basic insurance premiums are deductible. Supplementary/private insurance is not deductible.")
 
     default_child_deduction = 9400 if has_children else 0
-    child_deduction = st.number_input(min_value=0.0, value=default_child_deduction)
+    child_deduction = st.number_input(label= "Child deductions", min_value=0.0, value=default_child_deduction)
 
     pillar3a = st.number_input("Voluntary Pillar 3a contributions (CHF)", min_value=0.0, value=0.0)
     charitable = st.number_input("Charitable donations (CHF)", min_value=0.0, value=0.0)
