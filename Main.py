@@ -111,11 +111,11 @@ with tab1:
     default_health = max_health_adult if marital_status == "Single" else 2 * max_health_adult
     if has_children:
         default_health += max_health_child
-    health_insurance = st.number_input("Costs for health insurance", min_value = 0.0, value=float(default_health))
+    health_insurance = st.number_input(min_value = 0.0, value=float(default_health))
     st.caption("Note: Only mandatory basic insurance premiums are deductible. Supplementary/private insurance is not deductible.")
 
     default_child_deduction = 9400 if has_children else 0
-    child_deduction = st.number_input("Child deduction", min_value=0.0, value=default_child_deduction)
+    child_deduction = st.number_input(min_value=0.0, value=default_child_deduction)
 
     pillar3a = st.number_input("Voluntary Pillar 3a contributions (CHF)", min_value=0.0, value=0.0)
     charitable = st.number_input("Charitable donations (CHF)", min_value=0.0, value=0.0)
